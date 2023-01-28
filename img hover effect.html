@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #c4709e;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+
+.play {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #417d47;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .play {
+  height: 100%;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.d1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #efd2a0;
+}
+
+.container:hover .d1 {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Slide in Overlay from the Top</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="/img/collageimg1.jpg" alt="collegion student" class="image">
+  <div class="overlay">
+    <div class="text">hey everyone!!</div>
+  </div>
+</div>
+
+<h2>Fade in Overlay</h2>
+<p>Hover over the image to see the effect.</p>
+  <div class="container">
+    <img src="/img/collageimg2.jpg" alt="collegion student" class="image">
+    <div class="d1">
+      <div class="text">hy students!!</div>
+    </div>
+  </div>
+
+  <h2>Opacity with Box</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="/img/collageimg2.jpg" alt="collegion student" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">students</div>
+  </div>
+</div>
+ 
+<h2>Slide in Overlay from the Bottom</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="/img/collageimg3.jpg" alt="collegion student" class="image">
+  <div class="play">
+    <div class="text">dance compition</div>
+  </div>
+  </div>
+  
+ 
+</body>
+</html>
